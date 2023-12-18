@@ -1,8 +1,19 @@
 @tailwind base;
 @tailwind components;
-@tailwond utilities;
+@tailwind utilities;
 
-* {
+@layer components {
+  .search-input {
+    @apply mb-5 block w-60;
+  }
+}
+@layer utilities {
+  .grayed-out-disabled {
+    @apply disabled:opacity-50;
+  }
+}
+
+/* * {
   box-sizing: border-box;
   color: #333;
 }
@@ -367,4 +378,4 @@ form .pet {
 
 .mini .loader {
   font-size: 34px;
-}
+} */
